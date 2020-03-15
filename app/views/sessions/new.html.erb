@@ -1,4 +1,4 @@
-<h1 align="center">Log in</h1>
+<div class="title" align="center">Log In</div>
 
 <%= form_for(:session, :html => {class: "form-horizontal", role: "form"}, url: login_path) do |f| %>
   <!-- Email input -->
@@ -29,5 +29,7 @@
 
 <!-- Link to articles index page -->
 <div class="col-xs-4 col-xs-offset-4">
-  [ <%= link_to 'Return to articles listing', articles_path %> ]
+  <span class="badge">
+    <%= link_to 'Return to articles listing', articles_path, class: "category-text" %>
+  </span>
 </div>
