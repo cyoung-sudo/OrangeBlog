@@ -2,7 +2,7 @@
 
 ## Blog preview:
 
-![](app/assets/images/preview.jpg)
+![](app/assets/images/preview.png)
 
 ## Heroku link:
 https://orange-blog-first-blog.herokuapp.com
