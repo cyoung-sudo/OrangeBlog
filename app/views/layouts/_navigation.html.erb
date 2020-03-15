@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
 
     <div class="navbar-header">
@@ -9,19 +9,19 @@
         <span class="icon-bar"></span>
       </button>
       <!-- Logo links to root page -->
-      <%= link_to "Alpha Blog", root_path, class: "navbar-brand", id: "logo" %>
+      <%= link_to "Orange Blog", root_path, class: "navbar-brand", id: "logo" %>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <!-- Link to articles index page -->
-        <li><%= link_to "Articles", articles_path%></li>
+        <li><%= link_to "Articles", articles_path, class: "nav-link" %></li>
         <!-- Link to users index page -->
-        <li><%= link_to "Users", users_path%></li>
+        <li><%= link_to "Users", users_path, class: "nav-link" %></li>
         <!-- Show dropdown if user is logged in -->
         <% if logged_in? %> 
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Actions <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Actions <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <!-- Link to articles new page -->
               <li><%= link_to "New Article", new_article_path %></li>
@@ -29,7 +29,7 @@
           </li>
         <% end %>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <!-- Link to categories index page -->
             <li><%= link_to "All Categories", categories_path %></li>
@@ -49,9 +49,9 @@
         <!-- Show options if user is logged in -->
         <% if logged_in? %>
           <!-- Link to delete session -->
-          <li><%= link_to 'Log out', logout_path, method: :delete %></li>
+          <li><%= link_to 'Log out', logout_path, method: :delete, class: "nav-link" %></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
               Your Profile <%= "Admin" if current_user.admin? %> <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
@@ -64,9 +64,9 @@
         <!-- Show options if user isn't logged in -->
         <% else %>
           <!-- Link to create session -->
-          <li><%= link_to 'Log in', login_path %></li>
+          <li><%= link_to 'Log in', login_path, class: "nav-link" %></li>
           <!-- Link to users new page -->
-          <li><%= link_to 'Sign up', signup_path %></li>
+          <li><%= link_to 'Sign up', signup_path, class: "nav-link" %></li>
         <% end %>
       </ul>
     </div>

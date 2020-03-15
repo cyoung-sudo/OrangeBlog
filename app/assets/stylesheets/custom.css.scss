@@ -1,4 +1,4 @@
-$navbar-default-bg: black;
+$navbar-default-bg: #2E383F;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -6,18 +6,26 @@ $navbar-default-bg: black;
 #logo {
 	text-transform: uppercase;
 	font-weight: bold;
+	color: #ECECEB !important;
 }
 
 #logo:hover {
+	color: #F9A828 !important;
+	font-size: 1.5em;
 	text-decoration: none;
 }
 
-.center {
-	text-align: center;
+.nav-link {
+	color: #ECECEB !important;
+}
+
+.nav-link:hover {
+	color: #F9A828 !important;
+	text-decoration: none !important;
 }
 
 .jumbotron {
-	background-image: asset-url("beach.jpg");
+	background-image: asset-url("orange.jpg");
 	background-size: cover;
 	height: 550px;
 }
@@ -25,6 +33,87 @@ $navbar-default-bg: black;
 .jumbotron h1 {
 	margin-bottom: 30px;
 	font-weight: bold;
+}
+
+.title {
+	color: #2E383F;
+	font-weight: bold;
+	font-size: 4em;
+	margin-bottom: 10px;
+}
+
+.main-title {
+	color: #ECECEB;
+	font-weight: bold;
+	font-size: 6em;
+	margin-top: 80px;
+	margin-bottom: 20px;
+}
+
+.main-button {
+	background-color: #07617D;
+  	border: none;
+  	color: #ECECEB;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 2em;
+  	border-radius: 25px;
+}
+
+.main-button:hover {
+	text-transform: uppercase;
+}
+
+.center {
+	text-align: center;
+}
+
+.badge {
+	background-color: #07617D;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+
+.well {
+	background-color: #ECECEB;
+}
+
+.description {
+	margin-top: 0;
+}
+
+.listing {
+	list-style: none;
+	padding-left: 0;
+}
+
+.input_checkbox input {
+	width: auto !important;
+}
+
+.link-text {
+	color: #07617D;
+}
+
+.link-text:hover {
+	color: #F9A828;
+	text-decoration: none;
+}
+
+.category-text {
+	color: #ECECEB;
+}
+
+.category-text:hover {
+	color: #F9A828;
+	text-decoration: none;
+}
+
+.category-edit {
+	margin-bottom: 10px;
 }
 
 .article-title {
@@ -48,31 +137,20 @@ $navbar-default-bg: black;
 	padding-top: 5px;
 }
 
-.description {
-	margin-top: 0;
+.footer-bg {
+	background-color: #2E383F;
 }
 
-.listing {
-	list-style: none;
-	padding-left: 0;
-}
-
-.input_checkbox input {
-	width: auto !important;
-}
-
-.badge {
-	background-color: #CEF6F5;
-	text-transform: uppercase;
-	letter-spacing: -1px;
-	font-weight: bold;
+body {
+	background-color: #F9A828;
+	margin-top: 100px;
+	font-family: 'B612', sans-serif;
 }
 
 footer {
 	margin-top: 45px;
-	padding-top: 5px;
-	border-top: 1px solid #eaeaea;
-	color: #777;
+	padding-top: 10px;
+	color: #ECECEB;
 }
 
 footer a:hover {

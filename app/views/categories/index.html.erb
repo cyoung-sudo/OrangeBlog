@@ -1,4 +1,4 @@
-<h1 align="center">Categories</h1>
+<div class="title" align="center">~Categories~</div>
 
 <div align="center">
   <!-- Show page navigation buttons -->
@@ -6,15 +6,17 @@
   <% @categories.each do |category| %>
     <ul class="listing">
       <div class="row">
-        <div class="well col-md-4 col-md-offset-4">
-          <!-- Category name links to categories show page -->
-          <li class="article-title">
-            <%= link_to "#{category.name}", category_path(category) %>
-          </li>
-          <!-- Show article count for the category -->
-          <li>
-            <small><%= pluralize(category.articles.count, "article") %></small>
-          </li>
+        <div class="col-xs-6 col-xs-offset-3">
+          <div class="well well-lg">
+            <!-- Category name links to categories show page -->
+            <li class="article-title">
+              <%= link_to "#{category.name}", category_path(category), class: "link-text" %>
+            </li>
+            <!-- Show article count for the category -->
+            <li>
+              <small><%= pluralize(category.articles.count, "article") %></small>
+            </li>
+          </div>
         </div>
       </div>
     </ul>

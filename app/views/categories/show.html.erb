@@ -1,10 +1,10 @@
-<h1 align="center"><%= "Category: " + @category.name %></h1>
+<div class="title" align="center">~<%= @category.name %>~</div>
 
-<div align="center">
+<div class="category-edit" align="center">
   <!-- Show edit category name if user is admin -->
   <% if logged_in? and current_user.admin? %>
     <div class="row">
-      <span class="badge"><%= link_to "Edit Category Name", edit_category_path(@category) %></span>
+      <span class="badge"><%= link_to "Edit Category Name", edit_category_path(@category), class: "category-text" %></span>
     </div>
   <% end %>
   <!-- Show page navigation buttons -->
