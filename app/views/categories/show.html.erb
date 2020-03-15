@@ -1,14 +1,20 @@
 <h1 align="center"><%= "Category: " + @category.name %></h1>
 
 <div align="center">
+  <!-- Show edit category name if user is admin -->
   <% if logged_in? and current_user.admin? %>
     <div class="row">
-      <span class="badge"><%= link_to "edit Category", edit_category_path(@category) %></span>
+      <span class="badge"><%= link_to "Edit Category Name", edit_category_path(@category) %></span>
     </div>
   <% end %>
+  <!-- Show page navigation buttons -->
   <%= will_paginate @category_articles%>
-</div>  
+</div> 
+
+<!-- Display article partial -->
 <%= render 'articles/article', obj: @category_articles %>
+
+<!-- Show page navigation buttons -->
 <div align="center">
   <%= will_paginate @category_articles%>
 </div>

@@ -1,6 +1,7 @@
 <h1 align="center">Log in</h1>
 
 <%= form_for(:session, :html => {class: "form-horizontal", role: "form"}, url: login_path) do |f| %>
+  <!-- Email input -->
   <div class="form-group">
     <div class="col-sm-2 control-label">
       <%= f.label :email %>
@@ -9,6 +10,7 @@
       <%= f.email_field :email, class: "form-control", placeholder: "Enter email", autofocus: true %>
     </div>
   </div>
+  <!-- Password input -->
   <div class="form-group">
     <div class="col-sm-2 control-label">
       <%= f.label :password %>
@@ -17,6 +19,7 @@
       <%= f.password_field :password, class: "form-control", placeholder: "Enter password", autocomplete: "off" %>
     </div>
   </div>
+  <!-- Submit button -->
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
       <%= f.submit "Log in", class: "btn btn-primary btn-lg" %>
@@ -24,6 +27,7 @@
   </div>
 <% end %>
 
+<!-- Link to articles index page -->
 <div class="col-xs-4 col-xs-offset-4">
   [ <%= link_to 'Return to articles listing', articles_path %> ]
 </div>

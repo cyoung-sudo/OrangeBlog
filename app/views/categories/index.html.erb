@@ -1,14 +1,17 @@
-<h1 align="center">Listing all categories</h1>
+<h1 align="center">Categories</h1>
 
 <div align="center">
+  <!-- Show page navigation buttons -->
   <%= will_paginate %>
   <% @categories.each do |category| %>
     <ul class="listing">
       <div class="row">
         <div class="well col-md-4 col-md-offset-4">
+          <!-- Category name links to categories show page -->
           <li class="article-title">
             <%= link_to "#{category.name}", category_path(category) %>
           </li>
+          <!-- Show article count for the category -->
           <li>
             <small><%= pluralize(category.articles.count, "article") %></small>
           </li>
@@ -16,5 +19,6 @@
       </div>
     </ul>
   <% end %>
+  <!-- Show page navigation buttons -->
   <%= will_paginate %>
 </div>

@@ -1,24 +1,29 @@
+<!-- Display validation errors -->
 <%= render 'shared/errors', obj: @article %>
 
 <div class="row">
   <div class="col-xs-12">
+
     <%= form_for(@article, :html => {class: "form-horizontal", role: "form"}) do |f| %>
+      <!-- Title input -->
       <div class="form-group">
         <div class="col-sm-2 control-label">
           <%= f.label :title %>
         </div>
         <div class="col-sm-8">
-          <%= f.text_field :title, class: "form-control", placeholder: "Title of article", autofocus: true %>
+          <%= f.text_field :title, class: "form-control", placeholder: "Enter title", autofocus: true %>
         </div>
       </div>
+      <!-- Description input -->
       <div class="form-group">
         <div class="col-sm-2 control-label">
           <%= f.label :description %>
         </div>
         <div class="col-sm-8">
-          <%= f.text_area :description, class: "form-control", placeholder: "Body of article", rows: 10, autofocus: true %>
+          <%= f.text_area :description, class: "form-control", placeholder: "Enter description", rows: 10, autofocus: true %>
         </div>
       </div>
+      <!-- Category selection -->
       <div class="form-group">
         <div class="row">
           <div class="col-sm-offset-2 col-sm-8">
@@ -28,6 +33,7 @@
           </div>
         </div>
       </div>
+      <!-- Submit button -->
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
           <%= f.submit class: "btn btn-primary btn-lg" %>
@@ -35,8 +41,10 @@
       </div>
     <% end %>
 
+    <!-- Link to articles index page -->
     <div class="col-xs-4 col-xs-offset-4">
       [ <%= link_to 'Return to articles listing', articles_path %> ]
     </div>
+
   </div>
 </div>

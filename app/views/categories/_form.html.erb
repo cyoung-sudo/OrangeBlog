@@ -1,14 +1,17 @@
+<!-- Display validation errors -->
 <%= render 'shared/errors', obj: @category %>
 
 <%= form_for(@category, :html => {class: "form-horizontal", role: "form"}) do |f| %>
+  <!-- Name input -->
   <div class="form-group">
     <div class="col-sm-2 control-label">
       <%= f.label :name %>
     </div>
     <div class="col-sm-8">
-      <%= f.text_field :name, class: "form-control", placeholder: "Enter category name", autofocus: true %>
+      <%= f.text_field :name, class: "form-control", placeholder: "Enter name", autofocus: true %>
     </div>
   </div>
+  <!-- Submit button -->
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
       <%= f.submit class: "btn btn-primary btn-lg" %>
@@ -16,6 +19,7 @@
   </div>
 <% end %>
 
+<!-- Link to articles index page -->
 <div class="col-xs-4 col-xs-offset-4">
   [ <%= link_to 'Return to articles listing', articles_path %> ]
 </div>
