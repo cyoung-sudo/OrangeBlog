@@ -1,13 +1,13 @@
-#OrangeBlog
+# OrangeBlog
 
-##Blog preview:
+## Blog preview:
 
-![](app/assets/images/orange.jpg)
+![](app/assets/images/preview.jpg)
 
-##Heroku link:
+## Heroku link:
 https://orange-blog-first-blog.herokuapp.com
 
-##Features:
+## Features:
 
 * Create user accounts
 
@@ -15,7 +15,7 @@ https://orange-blog-first-blog.herokuapp.com
 
 * View articles by categories
 
-##Information:
+## Information:
 
 * Ruby version: 2.6.3
 
