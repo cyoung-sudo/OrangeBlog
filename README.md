@@ -1,24 +1,24 @@
-# README
+#OrangeBlog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##Blog preview:
 
-Things you may want to cover:
+![](app/assets/images/orange.jpg)
 
-* Ruby version
+##Heroku link:
+https://orange-blog-first-blog.herokuapp.com
 
-* System dependencies
+##Features:
 
-* Configuration
+* Create user accounts
 
-* Database creation
+* Create, edit, and delete articles
 
-* Database initialization
+* View articles by categories
 
-* How to run the test suite
+##Information:
 
-* Services (job queues, cache servers, search engines, etc.)
+* Ruby version: 2.6.3
 
-* Deployment instructions
+* Rails version: 5.2.4
 
-* ...
+* Bootstrap version: 3.4.1
