@@ -164,6 +164,10 @@ $navbar-default-bg: #2E383F;
 	background-color: #2E383F;
 }
 
+.page-content {
+	min-height: 500px;
+}
+
 body {
 	background-color: #F9A828;
 	font-family: 'B612', sans-serif;
@@ -173,6 +177,7 @@ footer {
 	margin-top: 45px;
 	padding-top: 10px;
 	color: #ECECEB;
+	height: 100px;
 }
 
 footer a:hover {
