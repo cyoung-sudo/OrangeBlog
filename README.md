@@ -5,7 +5,7 @@
 ![](app/assets/images/preview.png)
 
 ## Heroku link:
-https://orange-blog-first-blog.herokuapp.com
+https://orange-blog-test-blog.herokuapp.com
 
 ## Features:
 
